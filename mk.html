@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الإسعافات الأولية في مناطق العمل</title>
+    <style>
+        body {
+            background-color: darkred;
+            color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-bottom: 2px solid darkred;
+        }
+        .header h1 {
+            margin: 0;
+            color: darkred;
+        }
+        .language-buttons {
+            margin-top: 10px;
+        }
+        .language-buttons button {
+            background-color: darkred;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .language-buttons button:hover {
+            background-color: #8B0000;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        .logo {
+            width: 100px;
+            height: auto;
+            cursor: pointer;
+        }
+        .content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 70%;
+            margin: 20px auto;
+            text-align: justify;
+        }
+        .content.arabic, .content.urdu {
+            direction: rtl;
+            text-align: right;
+        }
+        .content.english {
+            direction: ltr;
+            text-align: left;
+        }
+        h2 {
+            color: darkred;
+        }
+        a {
+            color: darkred;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .emergency-numbers {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>الإسعافات الأولية في مناطق العمل</h1>
+        <div class="language-buttons">
+            <button onclick="showLanguage('arabic')">العربية</button>
+            <button onclick="showLanguage('english')">English</button>
+            <button onclick="showLanguage('urdu')">اردو</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <a href="https://files.fm/u/n2kjwsdzs8" target="_blank">
+            <img src="ع.jpg" alt="شعار جائزة عون" class="logo">
+        </a>
+        <a href="https://files.fm/u/qcvp6w5emv" target="_blank">
+            <img src="111.jfif" alt="شعار جائزة الهلال الأحمر" class="logo">
+        </a>
+    </div>
+
+    <!-- Arabic Content -->
+    <div id="arabic" class="content arabic">
+        <h2>الإسعافات الأولية باللغة العربية</h2>
+        
+        <h3>الحروق</h3>
+        <p>في حالة الحروق، يجب تبريد المنطقة المصابة بالماء البارد لمدة تتراوح بين 10 إلى 15 دقيقة. يُفضل عدم استخدام الثلج مباشرة على الجلد لتجنب تلف الأنسجة. بعد التبريد، قم بتغطية الحرق بضمادة نظيفة وجافة لتجنب التلوث. إذا كان الحرق كبيرًا أو عميقًا، يجب نقل المصاب إلى المستشفى فورًا لتلقي العلاج المناسب.</p>
+        
+        <h3>الجروح</h3>
+        <p>في حالة الجروح، يجب تنظيف الجرح جيدًا بالماء والصابون لإزالة الأوساخ والبكتيريا. بعد التنظيف، اضغط على الجرح بضمادة نظيفة لإيقاف النزيف. إذا كان النزيف شديدًا ولا يتوقف، يجب طلب المساعدة الطبية على الفور. في حالة الجروح العميقة، قد يحتاج المصاب إلى غرز طبية.</p>
+        
+        <h3>الكسور</h3>
+        <p>في حالة الكسور، يجب تثبيت المنطقة المصابة باستخدام جبيرة أو أي شيء صلب لمنع الحركة التي قد تزيد من الإصابة. تجنب تحريك المصاب إلا إذا كان هناك خطر مباشر يهدد حياته. يجب نقل المصاب إلى المستشفى فورًا لتلقي العلاج المناسب، حيث قد يحتاج إلى أشعة سينية أو جراحة.</p>
+        
+        <h3>الإغماء</h3>
+        <p>في حالة الإغماء، يجب وضع الشخص على ظهره ورفع قدميه قليلاً لتحسين تدفق الدم إلى الدماغ. تأكد من أن المجاري الهوائية مفتوحة وأن الشخص يتنفس بشكل طبيعي. إذا لم يستعد الشخص وعيه خلال دقائق قليلة، يجب طلب المساعدة الطبية فورًا. قد يكون الإغماء علامة على حالة طبية خطيرة.</p>
+        
+        <h3>ضربات الشمس</h3>
+        <p>في حالة ضربات الشمس، يجب نقل الشخص إلى مكان بارد بعيدًا عن أشعة الشمس المباشرة. قدم له الماء للشرب وقم بتبريد جسمه باستخدام الماء البارد أو الكمادات. إذا كانت الحالة شديدة، مثل فقدان الوعي أو ارتفاع درجة الحرارة بشكل كبير، يجب طلب المساعدة الطبية فورًا. ضربات الشمس قد تكون مهددة للحياة إذا لم يتم علاجها بسرعة.</p>
+        
+        <h3>روابط مفيدة</h3>
+        <ul>
+            <li><a href="https://www.mohap.gov.ae" target="_blank">وزارة الصحة في دولة الإمارات العربية المتحدة</a></li>
+            <li><a href="https://www.edraak.org/programs/course/fa911-vfa_2017_sp-3/" target="_blank">دورة الإسعافات الأولية على منصة إدراك</a></li>
+        </ul>
+        
+        <div class="emergency-numbers">
+            <p>أرقام الطوارئ:</p>
+            <p>الشرطة: 999</p>
+            <p>الإسعاف: 998</p>
+            <p>الدفاع المدني: 997</p>
+        </div>
+    </div>
+
+    <!-- English Content -->
+    <div id="english" class="content english hidden">
+        <h2>First Aid in English</h2>
+        
+        <h3>Burns</h3>
+        <p>In case of burns, cool the affected area with cold water for 10 to 15 minutes. Avoid using ice directly on the skin to prevent tissue damage. After cooling, cover the burn with a clean, dry dressing to avoid contamination. If the burn is large or deep, the victim should be taken to the hospital immediately for proper treatment.</p>
+        
+        <h3>Wounds</h3>
+        <p>In case of wounds, clean the wound thoroughly with water and soap to remove dirt and bacteria. After cleaning, apply pressure with a clean bandage to stop the bleeding. If the bleeding is severe and does not stop, seek medical help immediately. Deep wounds may require stitches.</p>
+        
+        <h3>Fractures</h3>
+        <p>In case of fractures, immobilize the affected area using a splint or something rigid to prevent movement that could worsen the injury. Avoid moving the victim unless there is immediate danger. The victim should be taken to the hospital for proper treatment, which may include X-rays or surgery.</p>
+        
+        <h3>Fainting</h3>
+        <p>In case of fainting, lay the person on their back and elevate their legs slightly to improve blood flow to the brain. Ensure the airways are open and the person is breathing normally. If the person does not regain consciousness within a few minutes, seek medical help immediately. Fainting could be a sign of a serious medical condition.</p>
+        
+        <h3>Heatstroke</h3>
+        <p>In case of heatstroke, move the person to a cool place away from direct sunlight. Provide water to drink and cool their body using cold water or compresses. If the condition is severe, such as loss of consciousness or a significant rise in body temperature, seek medical help immediately. Heatstroke can be life-threatening if not treated promptly.</p>
+        
+        <h3>Useful Links</h3>
+        <ul>
+            <li><a href="https://www.mohap.gov.ae" target="_blank">Ministry of Health and Prevention - UAE</a></li>
+            <li><a href="https://www.edraak.org/programs/course/fa911-vfa_2017_sp-3/" target="_blank">First Aid Course on Edraak</a></li>
+        </ul>
+        
+        <div class="emergency-numbers">
+            <p>Emergency Numbers:</p>
+            <p>Police: 999</p>
+            <p>Ambulance: 998</p>
+            <p>Civil Defense: 997</p>
+        </div>
+    </div>
+
+    <!-- Urdu Content -->
+    <div id="urdu" class="content urdu hidden">
+        <h2>ابتدائی طبی امداد اردو میں</h2>
+        
+        <h3>جلنے کی صورت میں</h3>
+        <p>جلنے کی صورت میں، متاثرہ جگہ کو ٹھنڈے پانی سے 10 سے 15 منٹ تک ٹھنڈا کریں۔ براہ راست جلد پر برف استعمال کرنے سے گریز کریں تاکہ بافتوں کو نقصان نہ پہنچے۔ ٹھنڈا کرنے کے بعد، جلنے والی جگہ کو صاف اور خشک پٹی سے ڈھانپیں تاکہ انفیکشن سے بچا جا سکے۔ اگر جلنے کی جگہ بڑی یا گہری ہو تو متاثرہ شخص کو فوری طور پر ہسپتال لے جائیں۔</p>
+        
+        <h3>زخموں کی صورت میں</h3>
+        <p>زخموں کی صورت میں، زخم کو پانی اور صابن سے اچھی طرح صاف کریں تاکہ گندگی اور بیکٹیریا کو دور کیا جا سکے۔ صاف کرنے کے بعد، خون بند کرنے کے لیے صاف پٹی سے دباؤ ڈالیں۔ اگر خون بہت زیادہ ہو اور نہ رُکے تو فوری طور پر طبی مدد حاصل کریں۔ گہرے زخموں پر ٹانکے لگ سکتے ہیں۔</p>
+        
+        <h3>فریکچر کی صورت میں</h3>
+        <p>فریکچر کی صورت میں، متاثرہ جگہ کو سپلنٹ یا کسی سخت چیز سے سہارا دیں تاکہ حرکت نہ ہو سکے جو چوٹ کو بڑھا سکتی ہے۔ متاثرہ شخص کو حرکت دینے سے گریز کریں جب تک کہ فوری خطرہ نہ ہو۔ متاثرہ شخص کو ہسپتال لے جائیں جہاں اس کا مناسب علاج ہو سکے، جس میں ایکسرے یا سرجری شامل ہو سکتی ہے۔</p>
+        
+        <h3>بیہوشی کی صورت میں</h3>
+        <p>بیہوشی کی صورت میں، شخص کو پیٹھ کے بل لٹائیں اور اس کے پیروں کو تھوڑا سا اونچا کریں تاکہ دماغ میں خون کا بہاؤ بہتر ہو۔ یقینی بنائیں کہ سانس کی نالیاں کھلی ہوں اور شخص معمول کے مطابق سانس لے رہا ہو۔ اگر شخص چند منٹوں میں ہوش میں نہ آئے تو فوری طور پر طبی مدد حاصل کریں۔ بیہوشی کسی سنگین طبی حالت کی علامت ہو سکتی ہے۔</p>
+        
+        <h3>لو لگنے کی صورت میں</h3>
+        <p>لو لگنے کی صورت میں، شخص کو سورج کی براہ راست روشنی سے دور ٹھنڈی جگہ پر منتقل کریں۔ اسے پانی پلائیں اور ٹھنڈے پانی یا کمپریس کے ذریعے جسم کو ٹھنڈا کریں۔ اگر حالت سنگین ہو، جیسے کہ ہوش کا فقدان یا جسمانی درجہ حرارت میں خطرناک حد تک اضافہ، تو فوری طور پر طبی مدد حاصل کریں۔ اگر فوری علاج نہ کیا جائے تو لو لگنا جان لیوا ہو سکتا ہے۔</p>
+        
+        <h3>مفید لنکس</h3>
+        <ul>
+            <li><a href="https://www.mohap.gov.ae" target="_blank">متحدہ عرب امارات کی وزارت صحت</a></li>
+            <li><a href="https://www.edraak.org/programs/course/fa911-vfa_2017_sp-3/" target="_blank">ابتدائی طبی امداد کا کورس - ادراک</a></li>
+        </ul>
+        
+        <div class="emergency-numbers">
+            <p>ہنگامی نمبر:</p>
+            <p>پولیس: 999</p>
+            <p>ایمبولینس: 998</p>
+            <p>سول ڈیفنس: 997</p>
+        </div>
+    </div>
+
+    <script>
+        function showLanguage(language) {
+            // Hide all content sections
+            document.getElementById('arabic').classList.add('hidden');
+            document.getElementById('english').classList.add('hidden');
+            document.getElementById('urdu').classList.add('hidden');
+
+            // Show the selected language section
+            document.getElementById(language).classList.remove('hidden');
+        }
+
+        // Show Arabic by default
+        showLanguage('arabic');
+    </script>
+</body>
+</html>
